@@ -15,6 +15,7 @@ const keyReturn = function(event){
   event.target.style.backgroundColor = '';
 }
 
+// Write a named function with event handler properties
 let eventKey = (note) => {
     note.addEventListener('mousedown', function(){KeyPlay(event)});
     note.addEventListener('mouseup', function(){keyReturn(event)});
@@ -26,14 +27,10 @@ let eventKey = (note) => {
   }*/
 } 
 
-notes.forEach(eventKey);
-
-
-// Write a named function with event handler properties
 
 
 // Write a loop that runs the array elements through the function
-
+notes.forEach(eventKey);
 
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
